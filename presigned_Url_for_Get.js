@@ -1,3 +1,7 @@
+
+//same code in the index
+
+
 const { S3Client, GetObjectCommand } = require("@aws-sdk/client-s3")
 const { getSignedUrl } = require("@aws-sdk/s3-request-presigner")
 require("dotenv").config()
@@ -21,7 +25,7 @@ async function getObjectUrl(key) {
 }
 
 async function init() {
-  console.log(await getObjectUrl("Wildlife Windows 7 Sample Video.mp4"))
+  console.log(await getObjectUrl("uploads/user-uploads/video-1707209432311.jpeg"))
 
 }
 
