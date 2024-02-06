@@ -1,0 +1,24 @@
+yarn init
+install s3 client >https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3/  >>>yarn add @aws-sdk/client-s3
+aws-sdk presigned url nodejs(library) >https://aws.amazon.com/blogs/developer/generate-presigned-url-modular-aws-sdk-javascript/
+yarn add @aws-sdk/s3-request-presigner
+for accessKeyId >go to IAM >access management > users > create
+    dont want to select >Provide user access to the AWS Management Console - optional
+    because this user is just a developer
+    no need to add into any groups just click on next
+    on the comming window click on create user no need of any selectons 
+
+    click on the created user and go to security credentials
+    click on crate access key
+    select command line interface or local code(here we using CLI)
+    tick the  i understand statement
+    click on next
+    cont want to fill> Description tag value 
+    where we will get access key and secret key
+
+while running the code we will get the presigned key>// the key we get here wont have any permission to use the resource since the user doesnt providede the access to s3 while 
+// createing him so we have to permit him
+
+so go to iam and open the user page and take permissions
+permission policy>add permission>add permission>
+attatch policies directly > add s3 fullaccess

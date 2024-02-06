@@ -1,0 +1,13 @@
+{
+  "name": "s3_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Ranjith-Prabhakar/aws_s3.git",
+  "author": "Ranjith <ranjithp2294@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.507.0",
+    "@aws-sdk/s3-request-presigner": "^3.507.0",
+    "dotenv": "^16.4.1"
+  }
+}
